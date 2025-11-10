@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>দেশী স্টাইল</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'hind-siliguri': ['"Hind Siliguri"', 'sans-serif'],
+            },
+            colors: {
+              'brand-cream': '#FFF8F0',
+              'brand-pink': '#FFD9C0',
+              'brand-gold': '#E1A268',
+              'brand-dark': '#5C3D2E',
+              'brand-text': '#4F4F4F',
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: 'Hind Siliguri', sans-serif;
+      }
+       /* Simple scrollbar styling for horizontal carousels */
+      .horizontal-scrollbar::-webkit-scrollbar {
+        height: 6px;
+      }
+      .horizontal-scrollbar::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+      }
+      .horizontal-scrollbar::-webkit-scrollbar-thumb {
+        background: #E1A268; 
+        border-radius: 10px;
+      }
+      .horizontal-scrollbar::-webkit-scrollbar-thumb:hover {
+        background: #5C3D2E; 
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
